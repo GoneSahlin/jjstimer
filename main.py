@@ -34,7 +34,7 @@ def Sandwich_of_the_day():
     seed = month * day 
     rd.seed(seed)
     temp = rd.randrange(1,18)
-    print("Todays sandwich of the day is a #"+str(temp)+" "+sandwich_names[temp])
+    print("Today's sandwich of the day is a #"+str(temp)+" "+sandwich_names[temp])
 
 def main():
     jjsTimes = findJJsTimes()
