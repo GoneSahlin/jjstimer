@@ -10,14 +10,14 @@ def findJJsTimes():
     return jjsTimes
 
 def findNextTime(curTime, jjsTimes):
-    i = 0
-    while(jjsTimes[i + 1] < curTime):
-        i += 1
-    return jjsTimes[i]
+    for time in jjsTimes:
+        if (curTime < time):
+            return time
 
 def main():
     jjsTimes = findJJsTimes()
     curTime = datetime.now()
+    print(jjsTimes[1] > curTime)
     nextTime = findNextTime(curTime, jjsTimes)
     print(nextTime - curTime)
 
