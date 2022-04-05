@@ -14,7 +14,7 @@ def test_findNextTime():
     assert next_2 == correct_2
     time_3 = datetime(2022, 5, 31, 14)
     next_3 = findNextTime(time_3)
-    correct_3 = datetime(2022, 6, 2, 13, 40)
+    correct_3 = datetime(2022, 6, 2, 14, 40)
     assert next_3 == correct_3
 
 if __name__ == "__main__":
